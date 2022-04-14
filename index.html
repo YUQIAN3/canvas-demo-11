@@ -19,15 +19,15 @@
 
         ctx.fillStyle = "black";
        ctx.strokeStyle = 'black';
-       ctx.lineWidth=15;
+       ctx.lineWidth=10;
        ctx.lineCap="round";
        var isTouchDevice= 'ontouchstart' in
        document.documentElement;
        function drawLine(x1,y1,x2,y2){
-      ctx.beginPath();
-      ctx.moveTo(x1, y1);
-     ctx.lineTo(x2, y2);
-      ctx.stroke();
+        ctx.beginPath();
+       ctx.moveTo(x1, y1);
+       ctx.lineTo(x2, y2);
+       ctx.stroke();
        }
        if(isTouchDevice){
          canvas.ontouchstart = (e) =>{
